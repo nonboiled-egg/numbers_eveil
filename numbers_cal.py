@@ -1,7 +1,10 @@
 import itertools 
 import pyperclip as cb
+import os
+from os import path
 
-file = open('numbers.txt','r', encoding='utf-8')
+
+file = open(path.join(path.dirname(__file__),'numbers.txt'),'r', encoding='utf-8')
 
 target_number = int(input("No."))
 
